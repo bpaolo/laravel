@@ -1,3 +1,6 @@
+@extends('products.default')
+
+@section('content')
 {{ Session::get('message') }}
 <h1>List Products</h1>
  
@@ -14,3 +17,4 @@
         </form>
         <hr>
     @endforeach
+@stop    

@@ -1,3 +1,6 @@
+@extends('products.default')
+
+@section('content')
 <h1>Edit Product</h1>
 <form action="/projectLaravel/public/products/{{ $detailproduct->id }}" method="POST">
     <input type="text" name="name" value="{{ $detailproduct->name }}" placeholder="Name">
@@ -11,3 +14,4 @@
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
     <input type="submit" value="Save">
 </form>
+@stop
